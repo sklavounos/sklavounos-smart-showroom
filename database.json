@@ -13,3 +13,14 @@
     }
   ]
 }
+{
+  "id": 2,
+  "title": "ΜΑΚΙΤΑ ΤΡΥΠΑΝΙ",
+  "category": "ΗΛΕΚΤΡΙΚΟ ΤΡΥΠΑΝΙ",
+  "company": "ΜΑΚΙΤΑ",
+  "description": "Ηλεκτρικό τρυπάνι MAKITA.",
+  "price": "350 €",
+  "image": "images/2.jpg",
+  "pdf": "pdf/2.pdf",
+  "video": ""
+}
