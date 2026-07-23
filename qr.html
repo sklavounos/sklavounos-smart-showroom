@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="el">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>QR Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1 class="logo">
+            🔥 SKLAVOUNOS SMART SHOWROOM
+        </h1>
+
+        <h2 style="text-align:center;">
+            Δημιουργία QR Προϊόντος
+        </h2>
+
+        <input
+            id="productId"
+            type="number"
+            class="search"
+            placeholder="Πληκτρολόγησε κωδικό προϊόντος">
+
+        <button
+            class="searchButton"
+            onclick="createQR()">
+
+            📱 ΔΗΜΙΟΥΡΓΙΑ QR
+
+        </button>
+
+        <div id="qrcode"
+             style="margin-top:40px;text-align:center;">
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function createQR(){
+
+    const id=document.getElementById("productId").value.trim();
+
+    if(id==""){
+
+        alert("Δώσε κωδικό προϊόντος.");
+
+        return;
+
+    }
+
+    const url=
+"https://sklavounos.github.io/sklavounos-smart-showroom/product.html?id="+id;
+
+    document.getElementById("qrcode").innerHTML="";
+
+    new QRCode(document.getElementById("qrcode"),{
+
+        text:url,
+
+        width:280,
+
+        height:280
+
+    });
+
+}
+
+</script>
+
+</body>
+
+</html>
