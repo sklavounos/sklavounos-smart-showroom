@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#222730;
+}
+
+.container{
+    width:95%;
+    max-width:900px;
+    margin:30px auto;
+}
+
+.card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.logo{
+    text-align:center;
+    color:#ff7300;
+    font-size:40px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+.photo{
+    width:100%;
+    max-height:500px;
+    object-fit:contain;
+    border-radius:15px;
+}
+
+.title{
+    text-align:center;
+    color:#ff7300;
+    font-size:38px;
+    margin-top:20px;
+}
+
+.info{
+    margin-top:25px;
+    font-size:24px;
+    line-height:1.8;
+}
+
+.price{
+    text-align:center;
+    font-size:48px;
+    color:#1e9f4d;
+    font-weight:bold;
+    margin:35px 0;
+}
+
+.button{
+    display:block;
+    width:100%;
+    background:#ff7300;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:18px;
+    border-radius:12px;
+    margin-top:15px;
+    font-size:22px;
+}
+
+.button:hover{
+    background:#e56400;
+}
+
+.search{
+    width:100%;
+    padding:18px;
+    font-size:28px;
+    text-align:center;
+    border-radius:12px;
+    border:2px solid #ddd;
+    margin-top:20px;
+}
+
+.searchButton{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:12px;
+    background:#ff7300;
+    color:white;
+    font-size:24px;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.searchButton:hover{
+    background:#e56400;
+}
+
+@media(max-width:700px){
+
+.logo{
+    font-size:28px;
+}
+
+.title{
+    font-size:28px;
+}
+
+.info{
+    font-size:20px;
+}
+
+.price{
+    font-size:36px;
+}
+
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sklavounos Smart Showroom</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1 class="logo">
+🔥 SKLAVOUNOS SMART SHOWROOM
+</h1>
+
+<h2 style="text-align:center;margin-bottom:25px;">
+Βρείτε το προϊόν σας
+</h2>
+
+<input
+type="number"
+id="productId"
+class="search"
+placeholder="Πληκτρολογήστε αριθμό προϊόντος">
+
+<button
+class="searchButton"
+onclick="openProduct()">
+
+🔍 ΑΝΑΖΗΤΗΣΗ
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function openProduct(){
+
+    const id=document.getElementById("productId").value;
+
+    if(id==""){
+
+        alert("Πληκτρολογήστε αριθμό προϊόντος.");
+
+        return;
+
+    }
+
+    window.location.href="product.html?id="+id;
+
+}
+
+</script>
+
+</body>
+
+</html>
