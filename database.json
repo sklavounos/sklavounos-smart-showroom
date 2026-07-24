@@ -32,6 +32,17 @@
       "image": "images/1.jpg",
       "pdf": "pdf/1.pdf",
       "video": ""
+    },
+    {
+      "id": 3,
+      "title": "Ενεργειακό τζάκι μαντεμένιο",
+      "category": "Μαντεμένιο",
+      "company": "INVICTA",
+      "description": "Ενεργειακό τζάκι μαντεμένιο INVICTA FOYER GRAND ANGLE 800 12 kW.",
+      "price": "1.450,00 €",
+      "image": "images/3.jpg",
+      "pdf": "pdf/3.pdf",
+      "video": ""
     }
   ]
 }
